@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Laboratorio 2</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    
+    <!--Punto 1/-->
+    <h2>Pregunta 1</h2>
+    <p>¿Qué es Javascript y en qué se asemeja a Java?</p>
+    <p>R= JavaScript es un lenguaje de programación interpretado, dinámico y orientado 
+        a objetos que se utiliza principalmente para crear páginas web interactivas. 
+        Fue desarrollado por Netscape en 1995 y se ejecuta en el navegador del cliente (front-end), 
+        aunque también se puede usar en el servidor (back-end) con plataformas como Node.js. JavaScript 
+        es esencial para el desarrollo web moderno, permitiendo la manipulación del DOM (Document Object Model), 
+        validación de formularios, animaciones, entre otros.</p>
+
+    <script>
+        //Punto 2
+        var num1 = 50;
+        var num2 = 2;
+
+        console.log("La suma es: " + (num1+num2));
+        console.log("La resta es: " + (num1-num2));
+        console.log("La multiplicación es: " + (num1*num2));
+        console.log("La división es: " + (num1/num2));
+
+        //Punto 3
+        let palabra1 = "¡Hola, ";
+        let palabra2 = "mundo!";
+        console.log(palabra1 + palabra2);
+
+        //Punto 4
+        const edad = 24;
+        const nombre = "Liseth";
+        console.log(typeof edad);  // number
+        console.log(typeof nombre); // string
+
+        //Punto 5
+        const objeto1 = {
+            numero: 42,
+            texto: "Buenas tardes, sea bienvenido a este programa.",
+            booleano: true,
+            objetoVacio: {}
+        };
+        console.log(objeto1);
+
+        //Punto 6
+        function sumaMultiplos(numero) {
+            let suma = 0;
+            for (let i = 1; i < numero; i++) {
+                if (i % 3 === 0 || i % 5 === 0) {
+                    suma += i;
+                }
+            }
+            return suma;
+        }
+            
+        console.log("La suma de múltiplos de 3 o 5 por debajo de 10: " + sumaMultiplos(10));
+    </script>
+</body>
+
+</html>
